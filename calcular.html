@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculo.css">
+</head>
+<body>
+    <form>
+        <h2>Tensão</h2>
+        <label for="corrente">Corrente:</label><br>
+        <input type="text" id="corrente1" name="corrente"><br> 
+        <label for="resistencia">Resistência:</label><br>
+        <input type="text" id="resistencia1" name="resistencia"><br>
+        <br>
+        <input type="button" value="Calcular" onclick="calcularTensao()">
+        <p id="resultado-tensao"></p>
+        <a href= "https://www.todamateria.com.br/tensao-eletrica/">Entenda melhor esse tipo de grandeza</a>
+        
+        <hr> 
+
+        <h2>Resistência</h2>
+        <label for="tensao">Tensão:</label><br>
+        <input type="text" id="tensao2" name="tensao"><br>
+        <label for="corrente">Corrente:</label><br>
+        <input type="text" id="corrente2" name="corrente"><br>
+        <br>
+        <input type="button" value="Calcular" onclick="calcularResistencia()">
+        <p id="resultado-resistencia"></p>
+        <a href= "https://www.todamateria.com.br/resistencia-eletrica/">Entenda melhor esse tipo de grandeza</a>
+
+        <hr>
+
+        <h2>Corrente</h2>
+        <label for="tensao">Tensão:</label><br>
+        <input type="text" id="tensao3" name="tensao"><br>
+        <label for="resistencia">Resistência:</label><br>
+        <input type="text" id="resistencia3" name="resistencia"><br>
+        <br>
+        <input type="button" value="Calcular" onclick="calcularCorrente()">
+        <p id="resultado-corrente"></p>
+        <a href= "https://www.todamateria.com.br/corrente-eletrica/">Entenda melhor esse tipo de grandeza</a>
+    </form>
+    <script src="calculo.js"></script>
+</body>
+</html>
